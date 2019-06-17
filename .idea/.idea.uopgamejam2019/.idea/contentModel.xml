@@ -10,11 +10,13 @@
           <e p="Components" t="Include">
             <e p="MovementComponent.cs" t="Include" />
             <e p="PlayerRotationComponent.cs" t="Include" />
+            <e p="RoomComponent.cs" t="Include" />
           </e>
           <e p="Systems" t="Include">
             <e p="InputSystem.cs" t="Include" />
             <e p="MovementSystem.cs" t="Include" />
             <e p="PlayerRotationSystem.cs" t="Include" />
+            <e p="RoomSystem.cs" t="Include" />
           </e>
         </e>
       </e>
