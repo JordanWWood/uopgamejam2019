@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\up826858\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\up826858\.Rider2019.1\system\resharper-host\Local\Transient\ReSharperHost\v191\SolutionCaches\_uopgamejam2019.2127676871.00" t="ExcludeRecursive" />
+    <e p="N:\GitHub\uopgamejam2019" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Components" t="Include">
+            <e p="MovementComponent.cs" t="Include" />
+            <e p="PlayerRotationComponent.cs" t="Include" />
+          </e>
+          <e p="Systems" t="Include">
+            <e p="InputSystem.cs" t="Include" />
+            <e p="MovementSystem.cs" t="Include" />
+            <e p="PlayerRotationSystem.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="uopgamejam2019.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>

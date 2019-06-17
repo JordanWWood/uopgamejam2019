@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelUserStore">
+    <attachedFolders />
+    <explicitIncludes>
+      <Path>$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8</Path>
+      <Path>$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16</Path>
+      <Path>$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.burst@0.2.4-preview.50</Path>
+      <Path>$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.collections@0.0.9-preview.10</Path>
+      <Path>$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.21</Path>
+      <Path>$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.jobs@0.0.7-preview.5</Path>
+      <Path>$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.mathematics@0.0.12-preview.19</Path>
+      <Path>$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@1.9.11</Path>
+      <Path>$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview</Path>
+      <Path>$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.3</Path>
+      <Path>$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13</Path>
+      <Path>$USER_HOME$/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@1.2.4</Path>
+      <Path>Packages</Path>
+      <Path>ProjectSettings</Path>
+    </explicitIncludes>
+    <explicitExcludes>
+      <Path>.git</Path>
+      <Path>.idea</Path>
+      <Path>.vs</Path>
+      <Path>Library</Path>
+      <Path>Temp</Path>
+      <Path>obj</Path>
+    </explicitExcludes>
+  </component>
+</project>
