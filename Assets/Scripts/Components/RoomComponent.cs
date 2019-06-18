@@ -1,6 +1,8 @@
-using Boo.Lang;
 using UnityEngine;
 
-public class RoomComponent : MonoBehaviour  {
-    public GameObject[] rooms;
+public class RoomComponent : MonoBehaviour
+{
+    [HideInInspector]
+    public Vector3 position;
+    public GameObject[] spawnPoints;
 }
