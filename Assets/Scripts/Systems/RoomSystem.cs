@@ -53,7 +53,10 @@ public class RoomSystem : ComponentSystem
 
     private RoomComponent rollRoom(Vector3 newPos, Vector3 oldPos)
     {
-        int rand = Random.Range(0, _roomData.RoomComponents.Length - 1);
+        int rand = Random.Range(0, _roomData.RoomComponents.Length );
+        Debug.Log(_roomData.RoomComponents.Length);
+        Debug.Log(rand);
+        
         GameObject gameObject = createRoom(rand, newPos);
         RoomComponent newRoomComponent = gameObject.GetComponent<RoomComponent>();
 
@@ -66,6 +69,7 @@ public class RoomSystem : ComponentSystem
             return newRoomComponent;
         }
 
+        Debug.Log("Room does not fit. Rerolling...");
         GameObject.Destroy(gameObject);
         return rollRoom(newPos, oldPos);
     }

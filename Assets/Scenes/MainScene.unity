@@ -207,9 +207,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84efa907f4d94ef5a58b0b358f8a70e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  genLimit: 3
+  genDepth: 2
   rooms:
-  - {fileID: 1009463043010408, guid: d090adac6dd98654995e0a356d9d3080, type: 2}
+  - {fileID: 1743816668087350, guid: 843809c315bb58a43be80ede06356a91, type: 2}
 --- !u!4 &392491911
 Transform:
   m_ObjectHideFlags: 0

@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 4900461592398202}
   - component: {fileID: 33792170085116468}
   - component: {fileID: 23917568931978186}
+  - component: {fileID: 64596752099607846}
   m_Layer: 0
   m_Name: Part2
   m_TagString: Untagged
@@ -162,6 +163,7 @@ GameObject:
   - component: {fileID: 4444548389884258}
   - component: {fileID: 33801468864480320}
   - component: {fileID: 23468051642926258}
+  - component: {fileID: 64260841424469906}
   m_Layer: 0
   m_Name: Part1
   m_TagString: Untagged
@@ -242,6 +244,7 @@ GameObject:
   - component: {fileID: 4211328843407552}
   - component: {fileID: 33814918794510606}
   - component: {fileID: 23143285997232754}
+  - component: {fileID: 64689790168508692}
   m_Layer: 0
   m_Name: Part4
   m_TagString: Untagged
@@ -273,7 +276,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4151512720290098}
-  - component: {fileID: 114559203336604860}
+  - component: {fileID: 114143544154027336}
   m_Layer: 0
   m_Name: something
   m_TagString: Untagged
@@ -322,6 +325,7 @@ GameObject:
   - component: {fileID: 4951129757009674}
   - component: {fileID: 33637271511694624}
   - component: {fileID: 23247623141622664}
+  - component: {fileID: 64720792573922872}
   m_Layer: 0
   m_Name: Part3
   m_TagString: Untagged
@@ -438,7 +442,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1743816668087350}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 15.756363, y: 12.615536, z: 14.40966}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4444548389884258}
@@ -895,6 +899,62 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1716723770857214}
   m_Mesh: {fileID: 4300000, guid: cdacd7c2da9222c4790b9bfb78a5d530, type: 3}
+--- !u!64 &64260841424469906
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1505453533873962}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: afa3734dbe5be4d418cf9a85ac74df46, type: 3}
+--- !u!64 &64596752099607846
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1439034417187620}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 3392b4cdd6938f24d869bf147dbd636e, type: 3}
+--- !u!64 &64689790168508692
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1716723770857214}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: cdacd7c2da9222c4790b9bfb78a5d530, type: 3}
+--- !u!64 &64720792573922872
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1813091194675676}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: aaaebf9d887578e4d8448bb21f24ca2d, type: 3}
 --- !u!108 &108047076796317138
 Light:
   m_ObjectHideFlags: 1
@@ -1339,7 +1399,7 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114559203336604860
+--- !u!114 &114143544154027336
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1347,11 +1407,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1743816668087350}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84efa907f4d94ef5a58b0b358f8a70e8, type: 3}
+  m_Script: {fileID: 11500000, guid: 6cfad3eaaecc471ebfe1ba08fbc3f109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  genDepth: 2
-  rooms:
+  position: {x: 0, y: 0, z: -50.4}
+  spawnPoints:
   - {fileID: 1431959503612292}
   - {fileID: 1282389948316228}
   - {fileID: 1302226505885376}
