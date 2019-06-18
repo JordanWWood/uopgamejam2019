@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.Entities;
 using UnityEngine;
 
+[UpdateAfter(typeof(RoomSystem))]
 public class MovementSystem : ComponentSystem {
     private struct MovementFilter {
         public Rigidbody Rigidbody;

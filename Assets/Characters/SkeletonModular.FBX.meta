@@ -1,15 +1,86 @@
 fileFormatVersion: 2
-guid: 6f6c0b27ce6779c499f088dbcf6f2971
+guid: cf5d5116b3ab9b1438799ab2c8940315
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: SkeleBoi1_palette1
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: SkeleBoi1:Mesh
-    2186277476908879412: ImportLogs
+    100000: Head
+    100002: Left Foot
+    100004: Left Forearm
+    100006: Left Hand
+    100008: Left Shin
+    100010: Left Thigh
+    100012: Left Upper Arm
+    100014: Pelvis
+    100016: Ribcage
+    100018: Right Foot
+    100020: Right Forearm
+    100022: Right Hand
+    100024: Right Shin
+    100026: Right Thigh
+    100028: Right Upper Arm
+    100030: //RootNode
+    400000: Head
+    400002: Left Foot
+    400004: Left Forearm
+    400006: Left Hand
+    400008: Left Shin
+    400010: Left Thigh
+    400012: Left Upper Arm
+    400014: Pelvis
+    400016: Ribcage
+    400018: Right Foot
+    400020: Right Forearm
+    400022: Right Hand
+    400024: Right Shin
+    400026: Right Thigh
+    400028: Right Upper Arm
+    400030: //RootNode
+    2100000: palette
+    2300000: Head
+    2300002: Left Foot
+    2300004: Left Forearm
+    2300006: Left Hand
+    2300008: Left Shin
+    2300010: Left Thigh
+    2300012: Left Upper Arm
+    2300014: Pelvis
+    2300016: Ribcage
+    2300018: Right Foot
+    2300020: Right Forearm
+    2300022: Right Hand
+    2300024: Right Shin
+    2300026: Right Thigh
+    2300028: Right Upper Arm
+    3300000: Head
+    3300002: Left Foot
+    3300004: Left Forearm
+    3300006: Left Hand
+    3300008: Left Shin
+    3300010: Left Thigh
+    3300012: Left Upper Arm
+    3300014: Pelvis
+    3300016: Ribcage
+    3300018: Right Foot
+    3300020: Right Forearm
+    3300022: Right Hand
+    3300024: Right Shin
+    3300026: Right Thigh
+    3300028: Right Upper Arm
+    4300000: Left Upper Arm
+    4300002: Left Forearm
+    4300004: Left Hand
+    4300006: Right Upper Arm
+    4300008: Right Forearm
+    4300010: Right Hand
+    4300012: Right Foot
+    4300014: Left Foot
+    4300016: Left Shin
+    4300018: Right Shin
+    4300020: Right Thigh
+    4300022: Left Thigh
+    4300024: Pelvis
+    4300026: Ribcage
+    4300028: Head
   externalObjects: {}
   materials:
     importMaterials: 1
