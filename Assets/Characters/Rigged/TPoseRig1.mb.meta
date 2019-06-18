@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dbf2f641d975c784cba1a0f7a513ca5a
+guid: 19089fd42e91ae444a69ed11f2e1bcef
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -102,8 +102,8 @@ ModelImporter:
     100192: RightShoulder
     100194: RightToeBase
     100196: RightUpLeg
-    100198: //RootNode
-    100200: Spine
+    100198: Spine
+    100200: //RootNode
     400000: Character1_Reference
     400002: group
     400004: group1
@@ -203,8 +203,8 @@ ModelImporter:
     400192: RightShoulder
     400194: RightToeBase
     400196: RightUpLeg
-    400198: //RootNode
-    400200: Spine
+    400198: Spine
+    400200: //RootNode
     2100000: palette
     4300000: Left Upper Arm
     4300002: Left Forearm
@@ -237,7 +237,6 @@ ModelImporter:
     13700024: Right Shin
     13700026: Right Thigh
     13700028: Right Upper Arm
-    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1

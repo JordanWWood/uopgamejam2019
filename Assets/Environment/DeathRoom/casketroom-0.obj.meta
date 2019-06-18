@@ -1,22 +1,17 @@
 fileFormatVersion: 2
-guid: cdacd7c2da9222c4790b9bfb78a5d530
+guid: 38b800fde658ec14ea82aec2dbbcc276
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: default
-    100002: //RootNode
-    400000: default
-    400002: //RootNode
+    100000: //RootNode
+    100002: default
+    400000: //RootNode
+    400002: default
     2100000: palette
     2300000: default
     3300000: default
     4300000: default
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: palette
-    second: {fileID: 2100000, guid: fdbea302aa80a294e92955d4a8fb492b, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
