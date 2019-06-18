@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
 guid: ddceca0f9e8d3d44696d197cf32738d5
-=======
-guid: e52c981d034cc9c4b9f6137d5f334545
->>>>>>> Stashed changes
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -67,53 +63,50 @@ ModelImporter:
     100114: QuickRigCharacter_Ctrl_RightUpLeg
     100116: QuickRigCharacter_Ctrl_RightWristEffector
     100118: QuickRigCharacter_Ctrl_Spine
-    100120: QuickRigCharacter_Guides
-    100122: QuickRigCharacter_Head
-    100124: QuickRigCharacter_Hips
-    100126: QuickRigCharacter_LeftArm
-    100128: QuickRigCharacter_LeftFoot
-    100130: QuickRigCharacter_LeftForeArm
-    100132: QuickRigCharacter_LeftHand
-    100134: QuickRigCharacter_LeftLeg
-    100136: QuickRigCharacter_LeftShoulder
-    100138: QuickRigCharacter_LeftToeBase
-    100140: QuickRigCharacter_LeftUpLeg
-    100142: QuickRigCharacter_Neck
-    100144: QuickRigCharacter_Reference
-    100146: QuickRigCharacter_RightArm
-    100148: QuickRigCharacter_RightFoot
-    100150: QuickRigCharacter_RightForeArm
-    100152: QuickRigCharacter_RightHand
-    100154: QuickRigCharacter_RightLeg
-    100156: QuickRigCharacter_RightShoulder
-    100158: QuickRigCharacter_RightToeBase
-    100160: QuickRigCharacter_RightUpLeg
-    100162: QuickRigCharacter_Spine
-    100164: Reference
-    100166: Right Foot
-    100168: Right Forearm
-    100170: Right Hand
-    100172: Right Shin
-    100174: Right Shoulder
-    100176: Right Thigh
-    100178: RightArm
-    100180: RightFoot
-    100182: RightForeArm
-    100184: RightHand
-    100186: RightLeg
-    100188: RightShoulder
-    100190: RightToeBase
-    100192: RightUpLeg
-    100194: Spine
-<<<<<<< Updated upstream
-    100196: QuickRigCharacter_Ctrl_Spine1
-    100198: QuickRigCharacter_Ctrl_Spine2
-    100200: QuickRigCharacter_Spine1
-    100202: QuickRigCharacter_Spine2
+    100120: QuickRigCharacter_Ctrl_Spine1
+    100122: QuickRigCharacter_Ctrl_Spine2
+    100124: QuickRigCharacter_Guides
+    100126: QuickRigCharacter_Head
+    100128: QuickRigCharacter_Hips
+    100130: QuickRigCharacter_LeftArm
+    100132: QuickRigCharacter_LeftFoot
+    100134: QuickRigCharacter_LeftForeArm
+    100136: QuickRigCharacter_LeftHand
+    100138: QuickRigCharacter_LeftLeg
+    100140: QuickRigCharacter_LeftShoulder
+    100142: QuickRigCharacter_LeftToeBase
+    100144: QuickRigCharacter_LeftUpLeg
+    100146: QuickRigCharacter_Neck
+    100148: QuickRigCharacter_Reference
+    100150: QuickRigCharacter_RightArm
+    100152: QuickRigCharacter_RightFoot
+    100154: QuickRigCharacter_RightForeArm
+    100156: QuickRigCharacter_RightHand
+    100158: QuickRigCharacter_RightLeg
+    100160: QuickRigCharacter_RightShoulder
+    100162: QuickRigCharacter_RightToeBase
+    100164: QuickRigCharacter_RightUpLeg
+    100166: QuickRigCharacter_Spine
+    100168: QuickRigCharacter_Spine1
+    100170: QuickRigCharacter_Spine2
+    100172: Reference
+    100174: Right Foot
+    100176: Right Forearm
+    100178: Right Hand
+    100180: Right Shin
+    100182: Right Shoulder
+    100184: Right Thigh
+    100186: RightArm
+    100188: RightFoot
+    100190: RightForeArm
+    100192: RightHand
+    100194: RightLeg
+    100196: RightShoulder
+    100198: RightToeBase
+    100200: RightUpLeg
+    100202: Spine
     100204: Spine1
     100206: Spine2
-=======
->>>>>>> Stashed changes
     400000: Chest
     400002: Head
     400004: Head1
@@ -174,53 +167,50 @@ ModelImporter:
     400114: QuickRigCharacter_Ctrl_RightUpLeg
     400116: QuickRigCharacter_Ctrl_RightWristEffector
     400118: QuickRigCharacter_Ctrl_Spine
-    400120: QuickRigCharacter_Guides
-    400122: QuickRigCharacter_Head
-    400124: QuickRigCharacter_Hips
-    400126: QuickRigCharacter_LeftArm
-    400128: QuickRigCharacter_LeftFoot
-    400130: QuickRigCharacter_LeftForeArm
-    400132: QuickRigCharacter_LeftHand
-    400134: QuickRigCharacter_LeftLeg
-    400136: QuickRigCharacter_LeftShoulder
-    400138: QuickRigCharacter_LeftToeBase
-    400140: QuickRigCharacter_LeftUpLeg
-    400142: QuickRigCharacter_Neck
-    400144: QuickRigCharacter_Reference
-    400146: QuickRigCharacter_RightArm
-    400148: QuickRigCharacter_RightFoot
-    400150: QuickRigCharacter_RightForeArm
-    400152: QuickRigCharacter_RightHand
-    400154: QuickRigCharacter_RightLeg
-    400156: QuickRigCharacter_RightShoulder
-    400158: QuickRigCharacter_RightToeBase
-    400160: QuickRigCharacter_RightUpLeg
-    400162: QuickRigCharacter_Spine
-    400164: Reference
-    400166: Right Foot
-    400168: Right Forearm
-    400170: Right Hand
-    400172: Right Shin
-    400174: Right Shoulder
-    400176: Right Thigh
-    400178: RightArm
-    400180: RightFoot
-    400182: RightForeArm
-    400184: RightHand
-    400186: RightLeg
-    400188: RightShoulder
-    400190: RightToeBase
-    400192: RightUpLeg
-    400194: Spine
-<<<<<<< Updated upstream
-    400196: QuickRigCharacter_Ctrl_Spine1
-    400198: QuickRigCharacter_Ctrl_Spine2
-    400200: QuickRigCharacter_Spine1
-    400202: QuickRigCharacter_Spine2
+    400120: QuickRigCharacter_Ctrl_Spine1
+    400122: QuickRigCharacter_Ctrl_Spine2
+    400124: QuickRigCharacter_Guides
+    400126: QuickRigCharacter_Head
+    400128: QuickRigCharacter_Hips
+    400130: QuickRigCharacter_LeftArm
+    400132: QuickRigCharacter_LeftFoot
+    400134: QuickRigCharacter_LeftForeArm
+    400136: QuickRigCharacter_LeftHand
+    400138: QuickRigCharacter_LeftLeg
+    400140: QuickRigCharacter_LeftShoulder
+    400142: QuickRigCharacter_LeftToeBase
+    400144: QuickRigCharacter_LeftUpLeg
+    400146: QuickRigCharacter_Neck
+    400148: QuickRigCharacter_Reference
+    400150: QuickRigCharacter_RightArm
+    400152: QuickRigCharacter_RightFoot
+    400154: QuickRigCharacter_RightForeArm
+    400156: QuickRigCharacter_RightHand
+    400158: QuickRigCharacter_RightLeg
+    400160: QuickRigCharacter_RightShoulder
+    400162: QuickRigCharacter_RightToeBase
+    400164: QuickRigCharacter_RightUpLeg
+    400166: QuickRigCharacter_Spine
+    400168: QuickRigCharacter_Spine1
+    400170: QuickRigCharacter_Spine2
+    400172: Reference
+    400174: Right Foot
+    400176: Right Forearm
+    400178: Right Hand
+    400180: Right Shin
+    400182: Right Shoulder
+    400184: Right Thigh
+    400186: RightArm
+    400188: RightFoot
+    400190: RightForeArm
+    400192: RightHand
+    400194: RightLeg
+    400196: RightShoulder
+    400198: RightToeBase
+    400200: RightUpLeg
+    400202: Spine
     400204: Spine1
     400206: Spine2
-=======
->>>>>>> Stashed changes
     2100000: palette
     4300000: Head
     4300002: Chest
@@ -304,11 +294,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-<<<<<<< Updated upstream
     previousCalculatedGlobalScale: 0.01
-=======
-    previousCalculatedGlobalScale: 1
->>>>>>> Stashed changes
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
