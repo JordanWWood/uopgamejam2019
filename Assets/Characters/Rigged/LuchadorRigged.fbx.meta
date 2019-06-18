@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: ddceca0f9e8d3d44696d197cf32738d5
+=======
+guid: e52c981d034cc9c4b9f6137d5f334545
+>>>>>>> Stashed changes
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -101,12 +105,15 @@ ModelImporter:
     100190: RightToeBase
     100192: RightUpLeg
     100194: Spine
+<<<<<<< Updated upstream
     100196: QuickRigCharacter_Ctrl_Spine1
     100198: QuickRigCharacter_Ctrl_Spine2
     100200: QuickRigCharacter_Spine1
     100202: QuickRigCharacter_Spine2
     100204: Spine1
     100206: Spine2
+=======
+>>>>>>> Stashed changes
     400000: Chest
     400002: Head
     400004: Head1
@@ -205,12 +212,15 @@ ModelImporter:
     400190: RightToeBase
     400192: RightUpLeg
     400194: Spine
+<<<<<<< Updated upstream
     400196: QuickRigCharacter_Ctrl_Spine1
     400198: QuickRigCharacter_Ctrl_Spine2
     400200: QuickRigCharacter_Spine1
     400202: QuickRigCharacter_Spine2
     400204: Spine1
     400206: Spine2
+=======
+>>>>>>> Stashed changes
     2100000: palette
     4300000: Head
     4300002: Chest
@@ -294,7 +304,11 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+<<<<<<< Updated upstream
     previousCalculatedGlobalScale: 0.01
+=======
+    previousCalculatedGlobalScale: 1
+>>>>>>> Stashed changes
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60

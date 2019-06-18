@@ -31,15 +31,30 @@ public class RoomSystem : ComponentSystem
             first = false;
         }
     }
+    
     private void populate(RoomComponent component, int depth, int iteration) {
         if (iteration >= depth) return;
         
+        List<RoomComponent> populateList = new List<RoomComponent>();
         foreach (var point in component.spawnPoints)
         {
             var position = point.transform.position;
-            if (_currentRooms.ContainsKey(position)) continue;
-            populate(rollRoom(position, component.position), depth, iteration + 1);
+            bool duplicate = false;
+            foreach (var currentRoom in _currentRooms)
+            {
+                if (Vector3.Distance(currentRoom.Key, position) < 20)
+                {
+                    duplicate = true;
+                    break;
+                }
+            }
+            if(duplicate) continue;
+            
+            populateList.Add(rollRoom(position, component.position, iteration + 1));
         }
+
+        foreach (var entity in populateList)
+            populate(entity, depth, iteration + 1);
     }
 
     private GameObject createRoom(int index, Vector3 location)
@@ -51,19 +66,18 @@ public class RoomSystem : ComponentSystem
         return room;
     }
 
-    private RoomComponent rollRoom(Vector3 newPos, Vector3 oldPos)
+    private RoomComponent rollRoom(Vector3 newPos, Vector3 oldPos, int depth)
     {
-        int rand = Random.Range(0, _roomData.RoomComponents.Length );
-        Debug.Log(_roomData.RoomComponents.Length);
-        Debug.Log(rand);
-        
+        int rand = Random.Range(0, _roomData.RoomComponents[0].rooms.Length);
+
         GameObject gameObject = createRoom(rand, newPos);
         RoomComponent newRoomComponent = gameObject.GetComponent<RoomComponent>();
-
+        newRoomComponent.depth = depth;
+        
         bool fits = false;
         foreach (var newPoint in newRoomComponent.spawnPoints)
         {
-            if (newPoint.transform.position != oldPos) continue;
+            if (Vector3.Distance(newPoint.transform.position, oldPos) < 10) continue;
             
             Debug.Log("Pos matches previous room, tile fits");
             return newRoomComponent;
@@ -71,6 +85,6 @@ public class RoomSystem : ComponentSystem
 
         Debug.Log("Room does not fit. Rerolling...");
         GameObject.Destroy(gameObject);
-        return rollRoom(newPos, oldPos);
+        return rollRoom(newPos, oldPos, depth);
     }
 }
