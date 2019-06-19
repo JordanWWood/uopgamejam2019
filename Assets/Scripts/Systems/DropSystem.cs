@@ -2,6 +2,7 @@ using System;
 using Unity.Collections;
 using Unity.Entities;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class DropSystem : ComponentSystem {
     private struct DropFilter
@@ -9,17 +10,18 @@ public class DropSystem : ComponentSystem {
         public DropComponent DropComponents;
     }
     
-    private struct DropData
-    {
-        [ReadOnly] public ComponentArray<DropDataComponent> dropData;
-    }
-    
     private struct PlayerFilter {
         public Transform Transform;
         public PlayerComponent PlayerComponent;
     }
-
+    
+    private struct DropData
+    {
+        [ReadOnly] public ComponentArray<DropDataComponent> dropData;
+    }
     [Inject] private DropData _dropData;
+    
+
     
     protected override void OnUpdate() {
         foreach (var drop in GetEntities<DropFilter>()) {
@@ -27,16 +29,24 @@ public class DropSystem : ComponentSystem {
                 drop.DropComponents.Destroy();
             }
         }
-        if (Input.GetKey(KeyCode.F9)) //TODO REMOVE
+        while (_dropData.dropData[0].CoinsToSpawn.Count > 0)
         {
-            for (int i = 0; i < 1; i++) {
+            Tuple<int, Vector3> spawnInfo = _dropData.dropData[0].CoinsToSpawn.Pop();
+
+            for (int i = spawnInfo.Item1; i > 0; i--) {
                 DropComponent c = GameObject.Instantiate(
                     _dropData.dropData[0].CoinPrefab,
-                    GetEntities<PlayerFilter>()[0].Transform.position + new Vector3(0, 2, 0),
-                    Quaternion.identity
+                    spawnInfo.Item2 + new Vector3(Random.Range(.0f, .1f), 2, Random.Range(.0f, .1f)),
+                    Quaternion.Euler(
+                        new Vector3(
+                            Random.Range(-6f, 6f), 
+                            Random.Range(-6f, 6f),
+                            Random.Range(-6f, 6f)
+                            )
+                        )
                 ).gameObject.GetComponent<DropComponent>();
 
-                c.expires = DateTime.Now.AddSeconds(30);
+                c.expires = DateTime.Now.AddSeconds(20);
             }
         }
     }
