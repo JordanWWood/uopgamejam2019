@@ -78,12 +78,9 @@ public class RoomSystem : ComponentSystem
         foreach (var newPoint in newRoomComponent.spawnPoints)
         {
             if (Vector3.Distance(newPoint.transform.position, oldPos) < 10) continue;
-            
-            Debug.Log("Pos matches previous room, tile fits");
             return newRoomComponent;
         }
-
-        Debug.Log("Room does not fit. Rerolling...");
+        
         _currentRooms.Remove(gameObject.transform.position);
         GameObject.Destroy(gameObject);
         return rollRoom(newPos, oldPos, depth);
