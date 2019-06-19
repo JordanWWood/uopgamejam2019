@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 114295073660192348}
   - component: {fileID: 54731092321273728}
   - component: {fileID: 136726613541006568}
+  - component: {fileID: 114074406304883100}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1375,8 +1376,6 @@ GameObject:
   - component: {fileID: 95090045517081736}
   - component: {fileID: 114287298352329388}
   - component: {fileID: 114734467726506284}
-  - component: {fileID: 114560348165742998}
-  - component: {fileID: 114658890992893994}
   m_Layer: 0
   m_Name: LuchadorRigged
   m_TagString: Untagged
@@ -3192,6 +3191,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114074406304883100
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1103990296447696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30cf445a968d47fbbf878290c29bd1a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114287298352329388
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3216,30 +3226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 0}
-  speed: 7
---- !u!114 &114560348165742998
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1818961829862454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bf10cdea1344482e91a4f2b58506b77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114658890992893994
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1818961829862454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37c11db5418943b4a1c69bff677a98ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseWorldPosition: {x: 0, y: 0, z: 0}
+  speed: 5
 --- !u!114 &114734467726506284
 MonoBehaviour:
   m_ObjectHideFlags: 1
