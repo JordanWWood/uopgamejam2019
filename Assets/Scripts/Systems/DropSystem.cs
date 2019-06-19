@@ -23,7 +23,6 @@ public class DropSystem : ComponentSystem {
     
     protected override void OnUpdate() {
         foreach (var drop in GetEntities<DropFilter>()) {
-            Debug.Log($"loop {drop.DropComponents.GetComponent<DropComponent>().expires}");
             if (drop.DropComponents.GetComponent<DropComponent>().expires < DateTime.Now) {
                 drop.DropComponents.Destroy();
             }
@@ -32,7 +31,7 @@ public class DropSystem : ComponentSystem {
         {
             for (int i = 0; i < 1; i++) {
                 DropComponent c = GameObject.Instantiate(
-                    _dropData.dropData[0].DropPrefabs[0],
+                    _dropData.dropData[0].CoinPrefab,
                     GetEntities<PlayerFilter>()[0].Transform.position + new Vector3(0, 2, 0),
                     Quaternion.identity
                 ).gameObject.GetComponent<DropComponent>();

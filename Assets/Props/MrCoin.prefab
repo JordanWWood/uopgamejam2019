@@ -138,4 +138,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   position: {x: 0, y: 0, z: 0}
   dropType: 0
-  pickupDistance: 0.5
+  pickupDistance: 1
