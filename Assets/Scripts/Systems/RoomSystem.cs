@@ -84,6 +84,7 @@ public class RoomSystem : ComponentSystem
         }
 
         Debug.Log("Room does not fit. Rerolling...");
+        _currentRooms.Remove(gameObject.transform.position);
         GameObject.Destroy(gameObject);
         return rollRoom(newPos, oldPos, depth);
     }
