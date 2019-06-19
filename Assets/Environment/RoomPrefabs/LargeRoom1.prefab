@@ -278,7 +278,7 @@ GameObject:
   - component: {fileID: 4151512720290098}
   - component: {fileID: 114143544154027336}
   m_Layer: 0
-  m_Name: something
+  m_Name: LargeRoom1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1416,3 +1416,4 @@ MonoBehaviour:
   - {fileID: 1282389948316228}
   - {fileID: 1302226505885376}
   - {fileID: 1935824479079702}
+  depth: 0
