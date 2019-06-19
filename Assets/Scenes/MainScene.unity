@@ -684,6 +684,8 @@ MonoBehaviour:
   - {fileID: 1743816668087350, guid: 843809c315bb58a43be80ede06356a91, type: 2}
   - {fileID: 1236237431946802, guid: e3cd8996557f5b548bdbec8a8ec001b2, type: 2}
   - {fileID: 1529254614617208, guid: 2f1c1f98e1b0e6240bb5f8f4b3a1025d, type: 2}
+  - {fileID: 1459704096293084, guid: 42b5c9ce8bc81264cad8a2720d75b10e, type: 2}
+  - {fileID: 1231163453297364, guid: 4a56b1b6270efc647bf7a50988e1b461, type: 2}
 --- !u!4 &392491911
 Transform:
   m_ObjectHideFlags: 0
@@ -734,7 +736,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CoinPrefab: {fileID: 1546889393501300, guid: a8523e58989e7b149a00e38ef8906b63, type: 2}
-  WeaponPrefabs: []
+  WeaponPrefabs:
+  - {fileID: 1936394848582530, guid: 86acf10af2416194bb0bed7c5e203b49, type: 2}
   ItemPrefabs: []
 --- !u!1 &417522625 stripped
 GameObject:
