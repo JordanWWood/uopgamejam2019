@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using Boo.Lang.Environments;
 using UnityEngine;
 
 public class RoomComponent : MonoBehaviour
@@ -8,5 +10,7 @@ public class RoomComponent : MonoBehaviour
     
     [HideInInspector] public Vector3 position;
     [HideInInspector] public bool hasBeenActive = false;
-    public int depth;
+    [HideInInspector] public List<GameObject> activeAI;
+    [HideInInspector] public bool doorsClosed = false;
+    [HideInInspector] public int depth;
 }
