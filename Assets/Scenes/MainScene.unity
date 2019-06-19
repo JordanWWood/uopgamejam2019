@@ -113,6 +113,22 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &145704395 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1103990296447696, guid: f3dd83dbd6a1e6441bf68af0db4c679e,
+    type: 2}
+  m_PrefabInternal: {fileID: 303406454}
+--- !u!114 &145704401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 145704395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30cf445a968d47fbbf878290c29bd1a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,7 +208,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4088835328246794, guid: f3dd83dbd6a1e6441bf68af0db4c679e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4088835328246794, guid: f3dd83dbd6a1e6441bf68af0db4c679e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -218,37 +234,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114560348165742998, guid: f3dd83dbd6a1e6441bf68af0db4c679e, type: 2}
+    - {fileID: 114658890992893994, guid: f3dd83dbd6a1e6441bf68af0db4c679e, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: f3dd83dbd6a1e6441bf68af0db4c679e, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &303406455 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1818961829862454, guid: f3dd83dbd6a1e6441bf68af0db4c679e,
-    type: 2}
-  m_PrefabInternal: {fileID: 303406454}
---- !u!114 &303406456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 303406455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bf10cdea1344482e91a4f2b58506b77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &303406457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 303406455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37c11db5418943b4a1c69bff677a98ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseWorldPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &392491909
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,6 +273,7 @@ MonoBehaviour:
   - {fileID: 1743816668087350, guid: 843809c315bb58a43be80ede06356a91, type: 2}
   - {fileID: 1424908447674964, guid: 7ffaf019b2d8487439bc1a245310d898, type: 2}
   - {fileID: 1009463043010408, guid: d090adac6dd98654995e0a356d9d3080, type: 2}
+  - {fileID: 1459704096293084, guid: 42b5c9ce8bc81264cad8a2720d75b10e, type: 2}
 --- !u!4 &392491911
 Transform:
   m_ObjectHideFlags: 0

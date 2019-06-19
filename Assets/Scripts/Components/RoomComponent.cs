@@ -7,5 +7,5 @@ public class RoomComponent : MonoBehaviour
     
     [HideInInspector] public Vector3 position;
     [HideInInspector] public bool hasBeenActive = false;
-    [HideInInspector] public int depth;
+    public int depth;
 }
