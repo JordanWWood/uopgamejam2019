@@ -221,6 +221,34 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3dd83dbd6a1e6441bf68af0db4c679e, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &303406455 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1818961829862454, guid: f3dd83dbd6a1e6441bf68af0db4c679e,
+    type: 2}
+  m_PrefabInternal: {fileID: 303406454}
+--- !u!114 &303406456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 303406455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf10cdea1344482e91a4f2b58506b77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &303406457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 303406455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37c11db5418943b4a1c69bff677a98ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseWorldPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &392491909
 GameObject:
   m_ObjectHideFlags: 0
