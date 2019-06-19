@@ -30,13 +30,15 @@ public class DropSystem : ComponentSystem {
         }
         if (Input.GetKey(KeyCode.F9)) //TODO REMOVE
         {
-            DropComponent c = GameObject.Instantiate(
-                _dropData.dropData[0].DropPrefabs[0],
-                GetEntities<PlayerFilter>()[0].Transform.position,
-                Quaternion.identity
-            ).gameObject.GetComponent<DropComponent>();
-            
-            c.expires = DateTime.Now.AddSeconds(3);
+            for (int i = 0; i < 1; i++) {
+                DropComponent c = GameObject.Instantiate(
+                    _dropData.dropData[0].DropPrefabs[0],
+                    GetEntities<PlayerFilter>()[0].Transform.position + new Vector3(0, 2, 0),
+                    Quaternion.identity
+                ).gameObject.GetComponent<DropComponent>();
+
+                c.expires = DateTime.Now.AddSeconds(30);
+            }
         }
     }
 }
