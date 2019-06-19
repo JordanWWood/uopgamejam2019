@@ -28,8 +28,7 @@ public class AISystem : ComponentSystem
     {
         foreach (var player in GetEntities<PlayerFilter>())
         {
-            var rooms = GetEntities<RoomFilter>();
-            foreach (var room in rooms)
+            foreach (var room in  GetEntities<RoomFilter>())
             {
                 if (room.RoomComponent.hasBeenActive) continue;
                 if (Vector3.Distance(player.Transform.position, room.Transform.position) > 12.5) continue;
@@ -42,7 +41,11 @@ public class AISystem : ComponentSystem
                 Debug.Log($"Spawn: {amount} | {chance}");
                 foreach (var point in room.RoomComponent.aiSpawnPoints) {
                     var r = new Random();
-                    if (chance % 100 != 0 && NextBool(r, chance)) spawnRandomEntity(point.transform.position);
+                    if (chance % 100 != 0 && NextBool(r, chance))
+                    {
+                        Debug.Log("Spawn extra");
+                        spawnRandomEntity(point.transform.position);
+                    }
                     
                     if (amount < 1) continue;
                     for (int i = 0; i < (int) amount; i++)
