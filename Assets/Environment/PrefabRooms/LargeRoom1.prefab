@@ -277,6 +277,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4151512720290098}
   - component: {fileID: 114143544154027336}
+  - component: {fileID: 114916515422637202}
   m_Layer: 0
   m_Name: LargeRoom1
   m_TagString: Untagged
@@ -442,7 +443,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1743816668087350}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.756363, y: 12.615536, z: 14.40966}
+  m_LocalPosition: {x: 1.054976, y: 3.2132058, z: 5.394665}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4444548389884258}
@@ -1410,10 +1411,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cfad3eaaecc471ebfe1ba08fbc3f109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: {x: 0, y: 0, z: -50.4}
+  position: {x: -25.2, y: 0, z: 100.8}
   spawnPoints:
   - {fileID: 1431959503612292}
   - {fileID: 1282389948316228}
   - {fileID: 1302226505885376}
   - {fileID: 1935824479079702}
   depth: 0
+--- !u!114 &114916515422637202
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1743816668087350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf10cdea1344482e91a4f2b58506b77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

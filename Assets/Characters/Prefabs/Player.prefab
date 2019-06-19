@@ -1375,6 +1375,8 @@ GameObject:
   - component: {fileID: 95090045517081736}
   - component: {fileID: 114287298352329388}
   - component: {fileID: 114734467726506284}
+  - component: {fileID: 114560348165742998}
+  - component: {fileID: 114658890992893994}
   m_Layer: 0
   m_Name: LuchadorRigged
   m_TagString: Untagged
@@ -1846,7 +1848,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1103990296447696}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4817761570612088}
@@ -2736,7 +2738,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1818961829862454}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.25, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 4289105203867988}
@@ -3215,6 +3217,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: {x: 0, y: 0}
   speed: 7
+--- !u!114 &114560348165742998
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1818961829862454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf10cdea1344482e91a4f2b58506b77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114658890992893994
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1818961829862454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37c11db5418943b4a1c69bff677a98ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseWorldPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &114734467726506284
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3246,10 +3271,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.25617933
+  m_Radius: 0.20448446
   m_Height: 0.8837565
   m_Direction: 1
-  m_Center: {x: -0.24382067, y: 0.39860767, z: 0}
+  m_Center: {x: 0, y: 0.39860767, z: 0.05169487}
 --- !u!137 &137027834588772042
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
