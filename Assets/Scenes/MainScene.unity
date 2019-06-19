@@ -253,9 +253,12 @@ MonoBehaviour:
   genDepth: 10
   rooms:
   - {fileID: 1743816668087350, guid: 843809c315bb58a43be80ede06356a91, type: 2}
-  - {fileID: 1424908447674964, guid: 7ffaf019b2d8487439bc1a245310d898, type: 2}
-  - {fileID: 1009463043010408, guid: d090adac6dd98654995e0a356d9d3080, type: 2}
+  - {fileID: 1236237431946802, guid: e3cd8996557f5b548bdbec8a8ec001b2, type: 2}
+  - {fileID: 1529254614617208, guid: 2f1c1f98e1b0e6240bb5f8f4b3a1025d, type: 2}
   - {fileID: 1459704096293084, guid: 42b5c9ce8bc81264cad8a2720d75b10e, type: 2}
+  - {fileID: 1743816668087350, guid: 843809c315bb58a43be80ede06356a91, type: 2}
+  - {fileID: 1236237431946802, guid: e3cd8996557f5b548bdbec8a8ec001b2, type: 2}
+  - {fileID: 1529254614617208, guid: 2f1c1f98e1b0e6240bb5f8f4b3a1025d, type: 2}
 --- !u!4 &392491911
 Transform:
   m_ObjectHideFlags: 0
