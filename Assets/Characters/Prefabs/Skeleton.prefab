@@ -948,6 +948,8 @@ GameObject:
   - component: {fileID: 136086864945317692}
   - component: {fileID: 54568567943943038}
   - component: {fileID: 114107235095427242}
+  - component: {fileID: 114150660408976792}
+  - component: {fileID: 114696889321062092}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Untagged
@@ -1907,7 +1909,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1689611717993144}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.637, y: 0, z: 0}
+  m_LocalPosition: {x: 17.154865, y: 4.2148094, z: -2.9944963}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4289482401633996}
@@ -3048,6 +3050,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targets: []
+  room: {fileID: 0}
+--- !u!114 &114150660408976792
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1689611717993144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dd5d9f8496f4c6a854d5b9562466c7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  maxHealth: 10
+--- !u!114 &114696889321062092
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1689611717993144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf10cdea1344482e91a4f2b58506b77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &136086864945317692
 CapsuleCollider:
   m_ObjectHideFlags: 1
