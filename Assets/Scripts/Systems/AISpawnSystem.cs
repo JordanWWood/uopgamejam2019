@@ -43,13 +43,14 @@ public class AISystem : ComponentSystem
                     var r = new Random();
                     if (chance % 100 != 0 && NextBool(r, chance)) {
                         Debug.Log("Spawn extra");
-                        room.RoomComponent.activeAI.Add(spawnRandomEntity(point.transform.position));
+                        room.RoomComponent.activeAI.Add(spawnRandomEntity(point.transform.position, room.RoomComponent));
+                        
                     }
                     
                     if (amount < 1) continue;
                     for (int i = 0; i < (int) amount; i++)
                     {
-                        room.RoomComponent.activeAI.Add(spawnRandomEntity(point.transform.position));
+                        room.RoomComponent.activeAI.Add(spawnRandomEntity(point.transform.position, room.RoomComponent));
                     }
                 }
                 
@@ -58,9 +59,12 @@ public class AISystem : ComponentSystem
         }
     }
 
-    private GameObject spawnRandomEntity(Vector3 location) {
+    private GameObject spawnRandomEntity(Vector3 location, RoomComponent roomComponent) {
         var random = UnityEngine.Random.Range(0, _aiData.AIData[0].AIPrefabs.Length);
-        return GameObject.Instantiate(_aiData.AIData[0].AIPrefabs[random], location, Quaternion.identity);
+        GameObject gameObject = GameObject.Instantiate(_aiData.AIData[0].AIPrefabs[random], location, Quaternion.identity);
+        gameObject.GetComponent<AIActorComponent>().room = roomComponent;
+
+        return gameObject;
     }
     
     private static bool NextBool(Random r, int truePercentage = 50) {
