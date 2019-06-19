@@ -268,7 +268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84efa907f4d94ef5a58b0b358f8a70e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  genDepth: 5
+  genDepth: 10
   rooms:
   - {fileID: 1743816668087350, guid: 843809c315bb58a43be80ede06356a91, type: 2}
   - {fileID: 1424908447674964, guid: 7ffaf019b2d8487439bc1a245310d898, type: 2}
