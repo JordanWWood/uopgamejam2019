@@ -687,7 +687,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1386461680653022}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.2, y: 0.98, z: -21.51}
+  m_LocalPosition: {x: 0, y: 1, z: -25.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4468959412988320}
@@ -884,7 +884,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1307001566734562}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.2, y: -0.98, z: 3.69}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4076013820595732}
@@ -1021,7 +1021,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1459704096293084}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 175.11278, y: 1.6289072, z: 77.95259}
+  m_LocalPosition: {x: 26.733414, y: 42.72946, z: -21.317257}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4240932264246396}
@@ -2084,7 +2084,7 @@ MonoBehaviour:
   aiSpawnPoints: []
   doors:
   - {fileID: 1550204825260688}
-  position: {x: -100.8, y: 0, z: -75.600006}
+  position: {x: -75.600006, y: 0, z: 25.2}
   hasBeenActive: 0
   activeAI: []
   doorsClosed: 0

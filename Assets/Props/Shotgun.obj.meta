@@ -5,12 +5,18 @@ ModelImporter:
   fileIDToRecycleName:
     100000: default
     100002: //RootNode
+    100004: Shotgun:Mesh
     400000: default
     400002: //RootNode
+    400004: Shotgun:Mesh
     2100000: palette
+    2100002: Shotgun_palette
     2300000: default
+    2300002: Shotgun:Mesh
     3300000: default
+    3300002: Shotgun:Mesh
     4300000: default
+    4300002: Shotgun:Mesh
   externalObjects: {}
   materials:
     importMaterials: 1

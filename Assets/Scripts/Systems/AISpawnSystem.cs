@@ -3,7 +3,7 @@ using Unity.Entities;
 using UnityEngine;
 using Random = System.Random;
 
-public class AISystem : ComponentSystem
+public class AISpawnSystem : ComponentSystem
 {
     private struct PlayerFilter
     {
