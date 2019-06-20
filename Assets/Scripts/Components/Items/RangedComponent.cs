@@ -3,4 +3,5 @@ using UnityEngine;
 
 public abstract class RangedComponent : HeldComponent {
     public GameObject muzzlePoint;
+    public GameObject bulletPrefab;
 }

@@ -31,27 +31,24 @@ public class AISpawnSystem : ComponentSystem
             foreach (var room in  GetEntities<RoomFilter>())
             {
                 if (room.RoomComponent.hasBeenActive) continue;
-                if (Vector3.Distance(player.Transform.position, room.Transform.position) > 12) continue;
+
+                var sub = player.Transform.position - room.Transform.position;
+                if (Vector3.SqrMagnitude(sub) > 12*12) continue;
                 if (room.RoomComponent.depth == 0) continue;
                 
                 var amount = (float) room.RoomComponent.depth / 2;
                 var chance = (int) (amount * 100);
                 if (chance > 100) chance /= room.RoomComponent.depth;
-                
-                Debug.Log($"Spawn: {amount} | {chance}");
+
                 foreach (var point in room.RoomComponent.aiSpawnPoints) {
                     var r = new Random();
-                    if (chance % 100 != 0 && NextBool(r, chance)) {
-                        Debug.Log("Spawn extra");
+                    if (chance % 100 != 0 && NextBool(r, chance)) 
                         room.RoomComponent.activeAI.Add(spawnRandomEntity(point.transform.position, room.RoomComponent));
-                        
-                    }
                     
                     if (amount < 1) continue;
                     for (int i = 0; i < (int) amount; i++)
-                    {
                         room.RoomComponent.activeAI.Add(spawnRandomEntity(point.transform.position, room.RoomComponent));
-                    }
+                    
                 }
                 
                 room.RoomComponent.hasBeenActive = true;

@@ -1,18 +1,26 @@
 ﻿using Unity.Entities;
 using Unity.Transforms;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class InputSystem : ComponentSystem {
     private struct InputFiler {
-        public Transform Transform;
         public PlayerRotationComponent RotationComponent;
     }
     
     private struct MovementFilter {
-        public Transform Transform;
         public MovementComponent MovementComponent;
     }
     
+    private struct ShootFilter {
+        public PlayerComponent PlayerComponent;
+        public ShootComponent ShootComponent;
+    }
+    
+    private struct RestartFilter {
+        public RestartDataComponent RestartDataComponent;
+    }
+
     protected override void OnUpdate() {
         foreach (var entity in GetEntities<MovementFilter>()) {
             // Keyboard input
@@ -32,7 +40,12 @@ public class InputSystem : ComponentSystem {
                 output.x = 0;
             if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.D))
                 output.y = 0;
-            
+
+            if (Input.GetKey(KeyCode.Escape)) {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                GetEntities<RestartFilter>()[0].RestartDataComponent.restart = true;
+            }
+
             entity.MovementComponent.direction = output;
         }
 
@@ -45,5 +58,9 @@ public class InputSystem : ComponentSystem {
                 entity.RotationComponent.mouseWorldPosition = hit.point;
             }
         }
+        
+        // Mouse button
+        foreach (var entity in GetEntities<ShootFilter>())
+            entity.ShootComponent.isFiring = Input.GetKey(KeyCode.Mouse0);;
     }
 }

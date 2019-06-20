@@ -9,12 +9,18 @@ public class RoomSystem : ComponentSystem
     private struct ExistingRoomFilter
     {
         public RoomComponent RoomComponent;
+    }    
+    
+    private struct RestartFilter
+    {
+        public RestartDataComponent RestartDataComponent;
     }
     
     private struct RoomData
     {
         [ReadOnly] public ComponentArray<RoomDataComponent> RoomComponents;
     }
+    
 
     [Inject] private RoomData _roomData;
 
@@ -29,6 +35,15 @@ public class RoomSystem : ComponentSystem
             populate(firstRoom.GetComponent<RoomComponent>(), _roomData.RoomComponents[0].genDepth, 0);
             
             first = false;
+            
+        }
+
+        var restart = GetEntities<RestartFilter>()[0];
+        if (restart.RestartDataComponent.restart)
+        {
+            first = true;
+            _currentRooms.Clear();
+            restart.RestartDataComponent.restart = false;
         }
     }
     
