@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Unity.Collections;
 using Unity.Entities;
 using UnityEngine;
@@ -12,33 +13,40 @@ public class AIControlSystem : ComponentSystem
         public HealthComponent HealthComponent;
         public Rigidbody Rigidbody;
     }
-    
+
     private struct PlayerFilter
     {
         public Transform Transform;
         public PlayerComponent PlayerComponent;
     }
+
     private struct DropData
     {
         [ReadOnly] public ComponentArray<DropDataComponent> dropData;
     }
+
     [Inject] private DropData _dropData;
 
     protected override void OnUpdate()
     {
         var playerPos = GetEntities<PlayerFilter>()[0].Transform.position;
+
+        List<GameObject> toDestory = new List<GameObject>();
         foreach (var entity in GetEntities<AIFilter>())
         {
             if (entity.HealthComponent.health <= 0)
             {
                 _dropData.dropData[0].CoinsToSpawn.Push(new Tuple<int, Vector3>(20, entity.Transform.position));
                 entity.AiActorComponent.room.activeAI.Remove(entity.AiActorComponent.gameObject);
-                GameObject.Destroy(entity.AiActorComponent.gameObject);
+                toDestory.Add(entity.AiActorComponent.gameObject);
 
                 continue;
             }
-            
+
             entity.Transform.gameObject.GetComponent<AIBehaviourComponent>().act(playerPos);
         }
+
+        foreach (var gObject in toDestory)
+            GameObject.Destroy(gObject);
     }
 }

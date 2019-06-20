@@ -36,7 +36,7 @@ public class DropSystem : ComponentSystem {
             for (int i = spawnInfo.Item1; i > 0; i--) {
                 DropComponent c = GameObject.Instantiate(
                     _dropData.dropData[0].CoinPrefab,
-                    spawnInfo.Item2 + new Vector3(Random.Range(.0f, .1f), 2, Random.Range(.0f, .1f)),
+                    spawnInfo.Item2 + new Vector3(Random.Range(.0f, .1f), 1, Random.Range(.0f, .1f)),
                     Quaternion.Euler(
                         new Vector3(
                             Random.Range(-6f, 6f), 
