@@ -13,5 +13,5 @@ public class RoomComponent : MonoBehaviour
     [HideInInspector] public bool hasBeenActive = false;
     [HideInInspector] public List<GameObject> activeAI;
     [HideInInspector] public bool doorsClosed = false;
-    [HideInInspector] public int depth;
+    public int depth;
 }

@@ -13,6 +13,11 @@ public class AIControlSystem : ComponentSystem
         public Rigidbody Rigidbody;
     }
     
+    private struct PlayerFilter
+    {
+        public Transform Transform;
+        public PlayerComponent PlayerComponent;
+    }
     private struct DropData
     {
         [ReadOnly] public ComponentArray<DropDataComponent> dropData;
@@ -21,6 +26,7 @@ public class AIControlSystem : ComponentSystem
 
     protected override void OnUpdate()
     {
+        var playerPos = GetEntities<PlayerFilter>()[0].Transform.position;
         foreach (var entity in GetEntities<AIFilter>())
         {
             if (entity.HealthComponent.health <= 0)
@@ -32,7 +38,7 @@ public class AIControlSystem : ComponentSystem
                 continue;
             }
             
-            //TODO
+            entity.Transform.gameObject.GetComponent<AIBehaviourComponent>().act(playerPos);
         }
     }
 }

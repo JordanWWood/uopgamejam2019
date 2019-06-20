@@ -82,14 +82,8 @@ public class RoomSystem : ComponentSystem
         foreach (var newPoint in newRoomComponent.spawnPoints)
         {
             if (Vector3.Distance((newPoint.transform.position), oldPos) > 10)
-            {
-                Debug.Log(($"True: {Vector3.Distance((newPoint.transform.position), oldPos)}"));
-                Debug.Log($"{newPoint.transform.position} | {oldPos}");
                 continue;
-            }
-            Debug.Log(($"False: {Vector3.Distance((newPoint.transform.position), oldPos)}"));
-            Debug.Log($"{newPoint.transform.position} | {oldPos}");
-            
+
             return newRoomComponent;
         }
 
