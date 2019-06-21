@@ -21,12 +21,25 @@ GameObject:
   - component: {fileID: 4748401083511496}
   - component: {fileID: 33222339175778316}
   - component: {fileID: 23951530952598098}
-  - component: {fileID: 114163065234513544}
-  - component: {fileID: 65545735455239034}
   - component: {fileID: 114321736164544720}
-  - component: {fileID: 54298322441519976}
+  - component: {fileID: 114930300233939738}
   m_Layer: 0
   m_Name: DrShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1737420931827748
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4917551741332666}
+  m_Layer: 0
+  m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,12 +52,26 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1152889011099640}
   m_LocalRotation: {x: -0, y: 0.99926496, z: -0, w: 0.038336772}
-  m_LocalPosition: {x: -0.043, y: 1.333, z: 0.565}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
-  m_Children: []
+  m_LocalPosition: {x: 0.0218, y: 0.0868, z: 0.0299}
+  m_LocalScale: {x: 0.0060000354, y: 0.0060000005, z: 0.008000049}
+  m_Children:
+  - {fileID: 4917551741332666}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 175.606, z: 0}
+--- !u!4 &4917551741332666
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1737420931827748}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0.55, z: -7.68}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4748401083511496}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23951530952598098
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -87,47 +114,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1152889011099640}
   m_Mesh: {fileID: 4300002, guid: 98845d095293d6c4f95dda52690b9ab3, type: 3}
---- !u!54 &54298322441519976
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1152889011099640}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &65545735455239034
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1152889011099640}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.2154487, y: 3.241198, z: 14.990542}
-  m_Center: {x: 0, y: -0.437505, z: 0}
---- !u!114 &114163065234513544
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1152889011099640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b3eecc71daf6a446bbc597a8637f533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  position: {x: 0, y: 0, z: 0}
-  dropType: 1
-  pickupDistance: 2
 --- !u!114 &114321736164544720
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -139,3 +125,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bf10cdea1344482e91a4f2b58506b77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114930300233939738
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1152889011099640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6343d0e643f23b4e82c82fb3033c9fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  muzzlePoint: {fileID: 1737420931827748}
+  bulletPrefab: {fileID: 1301986711328232, guid: 74b7c1eb2bd6de044a38bd1a6325d5c1,
+    type: 2}
+  spread: 15
+  pelletCount: 8
