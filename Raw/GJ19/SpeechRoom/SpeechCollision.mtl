@@ -1,0 +1,78 @@
+newmtl CrossRoom_0:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd CrossRoom-0.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl CrossRoom_1:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd CrossRoom-1.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl CrossRoom_2:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd CrossRoom-2.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl CrossRoom_3:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd CrossRoom-3.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl SpeechRoom_0:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd SpeechRoom-0.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl SpeechRoom_1:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd SpeechRoom-1.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl SpeechRoom_2:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd SpeechRoom-2.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl SpeechRoom_3:palette
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd SpeechRoom-3.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl initialShadingGroup
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
