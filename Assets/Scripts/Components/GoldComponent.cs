@@ -7,4 +7,5 @@ public class GoldComponent : MonoBehaviour {
 
     public GameObject scoreText;
     public GameObject roomText;
+    public GameObject healthText;
 }

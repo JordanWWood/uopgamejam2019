@@ -952,6 +952,7 @@ GameObject:
   - component: {fileID: 114696889321062092}
   - component: {fileID: 114227412725982538}
   - component: {fileID: 195934520635919296}
+  - component: {fileID: 114974824787708686}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Untagged
@@ -1911,7 +1912,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1689611717993144}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.936572, y: 9.688569, z: 3.0772338}
+  m_LocalPosition: {x: 34.289497, y: 24.27625, z: -42.897354}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4289482401633996}
@@ -3088,6 +3089,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bf10cdea1344482e91a4f2b58506b77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114974824787708686
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1689611717993144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58d823070db04fdb947923024e2d9b8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  radius: 0.5
+  team: 0
 --- !u!136 &136086864945317692
 CapsuleCollider:
   m_ObjectHideFlags: 1
